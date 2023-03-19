@@ -1,0 +1,52 @@
+@media(max-width: 1450px) {
+    .max-area {
+        max-width: 1220px;
+        margin: 50px 0;
+    }
+}
+
+@media(max-width: 1230px) {
+    .max-area {
+        max-width: 1000px;
+    }
+    .background{
+        height: auto;
+        width: auto;
+    }
+}
+
+@media(max-width: 1020px) {
+    .max-area {
+        grid-template-areas:
+            'article1 article1 article2'
+            'article3 article4 article4'
+            'article5 article5 article5';
+        max-width: 750px;
+        margin: 75px 0;
+    }
+
+}
+
+@media(max-width: 800px){
+    .max-area{
+        width: 375px;
+        grid-template-areas: 
+        'article1'
+        'article2'
+        'article3'
+        'article4'
+        'article5';
+    }
+}
+
+@media(max-width: 500px) {
+    .max-area {
+        max-width: 375px;
+    }
+}
+
+@media(max-width: 390px){
+    .max-area{
+        max-width: 300px;
+    }
+}

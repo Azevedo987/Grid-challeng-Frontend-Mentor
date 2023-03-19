@@ -1,0 +1,113 @@
+:root{
+    /*       PRIMARIA        */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /*      Neutra      */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    font-family: Barlow Semi Condensed;
+    font-size: 13px;
+}
+
+.background{
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.max-area{
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: 
+    'article1 article1 article1 article2 article5'
+    'article3 article4 article4 article4 article5';
+    grid-row-gap: 25px;
+    grid-column-gap: 30px
+}
+
+.max-area article{
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.article1{
+    grid-area: article1;
+    background-color: var(--moderate-violet);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% top;
+
+}
+
+.article2{
+    grid-area: article2;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.article3{
+    grid-area: article3;
+    background-color: var(--white);
+}
+
+.article4{
+    grid-area: article4;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.article5{
+    grid-area: article5;
+    background-color: var(--white);
+}
+
+.dark{
+    color: var(--white);    
+}
+
+.clear{
+    color: rgb(85, 85, 85);
+}
+
+.top-article{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-article h3{
+    margin: 0px;
+    font-weight: 500;
+}
+
+.top-article p{
+    margin: 0;
+    opacity: 50%;
+}
+
+.top-article div{
+    margin-left: 20px;
+}
+
+.foto-de-perfil{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.article-title{
+    font-size: 21px;
+}
+
+.max-area article p{
+    line-height: 20px;
+    opacity: 70%;
+    font-size: 16px;
+}
